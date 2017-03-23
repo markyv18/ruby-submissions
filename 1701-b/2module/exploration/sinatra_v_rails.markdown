@@ -17,12 +17,47 @@ Now cd into each project, run `bundle` on each project, and you're ready to go. 
 
 ### Exercise:
 
-1. Take a look at this stripped down Sinatra app and this stripped down Rails app. How are they different and how are they similar? Identify 5 differences, and for each one describe 1-2 implications. What effect does that difference have for each framework? If you don't know exactly, draw on your knowledge and experience and make some educated guesses/inferences. Also, practice your research skills to look into the differences.
+Take a look at this stripped down Sinatra app and this stripped down Rails app. How are they different and how are they similar? Identify 5 differences, and for each one describe 1-2 implications. What effect does that difference have for each framework? If you don't know exactly, draw on your knowledge and experience and make some educated guesses/inferences. Also, practice your research skills to look into the differences.
 
-1. Consulting blogs and commentary you find online, identify 3 similarities between Rails and Sinatra.
+Sinatra: 
+1 controller file, 
+Only has an MVC directory
+paths are specified with a url 
+testing : model & feature, sorta a app test (not yet learned)
 
-1. Consulting blogs and commentary you find online, identify 3 things that distinguish Rails, advantages.
+Rails: 
+3 controller files
+MVC directories plus a mailer + helper
+paths are specified with CRUD words
 
-1. In your Rails project, what does the `routes.rb` file inside of the `/config` directory do? What does this correlate to in our Sinatra app?
+==============================================
 
-1. We teach Sinatra by adding some structures that Sinatra doesn’t need, but help you make the transition between Sinatra and Rails. What does a stripped down implementation of Sinatra look like, and what are the pieces we’ve added for educational purposes?
+Consulting blogs and commentary you find online, identify 3 similarities between Rails and Sinatra.
+MVC and Ruby 3rd.....?
+
+
+================================================
+
+Consulting blogs and commentary you find online, identify 3 things that distinguish Rails, advantages.
+
+Rails works on BIG things 
+Sintra on smaller things and APIs
+
+Rails good with db's 
+Sinatra good for API's
+
+Rails is a gun at a knife fight (too much for small operations)
+conversely sinatra has no business going to war with a puddy knife
+
+From SB: Rails and Sinatra "are solving a different set of issues, even though they indeed overlap. While Rails is a framework focused on writing model driven web applications, Sinatra is a library for dealing with HTTP from the server side. If you think in terms of HTTP requests/responses, Sinatra is the ideal tool. If you need full integration and as much boilerplate as possible, Rails is the way to go".
+
+A potential weakness to Sinatra is security... Sinatra leaves many common attack vectors open that the developer needs to be aware of and deal with. Rails offers built-in security
+
+==================================================
+
+In your Rails project, what does the routes.rb file inside of the /config directory do? What does this correlate to in our Sinatra app?
+
+In Rails the 'routes.rb" file is mapping out the HTTP verbs, which, in Sinatra is done directly in the controller.
+We teach Sinatra by adding some structures that Sinatra doesn’t need, but help you make the transition between Sinatra and Rails. What does a stripped down implementation of Sinatra look like, and what are the pieces we’ve added for educational purposes?
+
+It does not need a database; we added that...
